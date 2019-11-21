@@ -1,4 +1,4 @@
-package shoppingList;
+package aufgabe5.shoppingList;
 
 import java.util.ArrayList;
 import java.util.Iterator;

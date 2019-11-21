@@ -1,4 +1,4 @@
-package threads;
+package aufgabe5.threads;
 
 import java.io.File;
 import java.io.IOException;

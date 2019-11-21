@@ -1,4 +1,4 @@
-package shoppingList;
+package aufgabe5.shoppingList;
 
 
 public class ShoppinglistMain {

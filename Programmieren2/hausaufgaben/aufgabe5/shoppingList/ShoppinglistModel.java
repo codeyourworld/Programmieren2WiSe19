@@ -1,4 +1,4 @@
-package shoppingList;
+package aufgabe5.shoppingList;
 
 import java.io.Serializable;
 import java.util.ArrayList;

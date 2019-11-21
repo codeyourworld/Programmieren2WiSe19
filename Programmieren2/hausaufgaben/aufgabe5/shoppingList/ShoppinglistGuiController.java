@@ -1,4 +1,4 @@
-package shoppingList;
+package aufgabe5.shoppingList;
 
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;

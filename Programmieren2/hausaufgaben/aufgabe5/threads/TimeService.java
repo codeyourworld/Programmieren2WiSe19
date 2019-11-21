@@ -1,4 +1,4 @@
-package threads;
+package aufgabe5.threads;
 
 import java.util.Calendar;
 import java.util.regex.Matcher;

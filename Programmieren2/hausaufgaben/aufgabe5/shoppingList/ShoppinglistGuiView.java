@@ -1,4 +1,4 @@
-package shoppingList;
+package aufgabe5.shoppingList;
 
 import java.awt.BorderLayout;
 import java.awt.Color;

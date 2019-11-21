@@ -1,4 +1,4 @@
-package threads;
+package aufgabe5.threads;
 
 public class WrongTimeFormatException extends Exception {
 
