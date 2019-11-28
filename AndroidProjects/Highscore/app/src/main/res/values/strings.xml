@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Highscore</string>
+    <string name="default_name">Name</string>
+    <string name="default_points">0</string>
+</resources>
