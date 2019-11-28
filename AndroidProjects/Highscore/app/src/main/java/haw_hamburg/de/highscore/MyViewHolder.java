@@ -2,7 +2,6 @@ package haw_hamburg.de.highscore;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.SeekBar;
 import android.widget.TextView;
 
 public class MyViewHolder extends RecyclerView.ViewHolder {
@@ -10,7 +9,7 @@ public class MyViewHolder extends RecyclerView.ViewHolder {
     //TODO please declare your views from R.layout.item here
     private final TextView pointsTextView;
     private final TextView nameTextView;
- 
+
     public MyViewHolder(View itemView) {
         super(itemView);
 
