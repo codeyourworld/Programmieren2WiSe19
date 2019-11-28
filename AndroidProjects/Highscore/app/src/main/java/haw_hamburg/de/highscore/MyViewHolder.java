@@ -10,7 +10,7 @@ public class MyViewHolder extends RecyclerView.ViewHolder {
     //TODO please declare your views from R.layout.item here
     private final TextView pointsTextView;
     private final TextView nameTextView;
-
+ 
     public MyViewHolder(View itemView) {
         super(itemView);
 
