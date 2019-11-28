@@ -9,9 +9,7 @@ import java.util.Collections;
 
 public class MyController {
 
-    private LinearLayoutManager layoutManager;
     private ArrayList<Score> scores = new ArrayList<>();
-    private RecyclerView recyclerView;
     private MyAdapter adapter;
 
     public MyController(Activity activity) {
@@ -23,11 +21,11 @@ public class MyController {
         Collections.sort(scores);
 
         //TODO set layout manager to reycler
-        layoutManager = new LinearLayoutManager(activity);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(activity);
 
         //TODO the recyclerView has to be declared in
         //TODO activity main.xml for this example
-        recyclerView = (RecyclerView) activity.findViewById(R.id.recyclerView);
+        RecyclerView recyclerView = (RecyclerView) activity.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(layoutManager);
 
         //TODO give the adapter the reference of the data
