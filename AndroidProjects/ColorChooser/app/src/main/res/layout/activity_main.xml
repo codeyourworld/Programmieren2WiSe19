@@ -4,30 +4,136 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackground"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/redTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:text="@string/red"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        android:layout_marginStart="16dp" />
+        app:layout_constraintVertical_bias="0.03"
+        android:layout_marginStart="8dp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/greenTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:text="@string/green"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif"
+        app:layout_constraintStart_toStartOf="@+id/redTextView"
+        app:layout_constraintTop_toBottomOf="@+id/redTextView" />
+
+    <TextView
+        android:id="@+id/blueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/blue"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif"
+        app:layout_constraintStart_toStartOf="@+id/redTextView"
+        app:layout_constraintTop_toBottomOf="@+id/greenTextView" />
+
+
+    <EditText
+        android:id="@+id/redEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="3"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/redTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/redTextView"
+        android:hint="@string/default_value_rgb"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/greenEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/greenTextView"
+        app:layout_constraintEnd_toEndOf="@+id/redEditText"
+        app:layout_constraintTop_toTopOf="@+id/greenTextView"
+        android:hint="@string/default_value_rgb"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/blueEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:inputType="numberDecimal"
+        android:hint="@string/default_value_rgb"
+        app:layout_constraintBottom_toBottomOf="@+id/blueTextView"
+        app:layout_constraintEnd_toEndOf="@+id/greenEditText"
+        app:layout_constraintTop_toTopOf="@+id/blueTextView"
+        tools:ignore="Autofill" />
+
+    <SeekBar
+        android:id="@+id/redSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:max="255"
+        app:layout_constraintBottom_toBottomOf="@+id/redTextView"
+        app:layout_constraintEnd_toStartOf="@+id/redEditText"
+        app:layout_constraintStart_toEndOf="@+id/greenTextView"
+        app:layout_constraintTop_toTopOf="@+id/redTextView" />
+
+    <SeekBar
+        android:id="@+id/greenSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:max="255"
+        app:layout_constraintBottom_toBottomOf="@+id/greenTextView"
+        app:layout_constraintEnd_toEndOf="@+id/redSeekBar"
+        app:layout_constraintStart_toStartOf="@+id/redSeekBar"
+        app:layout_constraintTop_toTopOf="@+id/greenTextView" />
+
+    <SeekBar
+        android:id="@+id/blueSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:max="255"
+        app:layout_constraintBottom_toBottomOf="@+id/blueTextView"
+        app:layout_constraintEnd_toEndOf="@+id/redSeekBar"
+        app:layout_constraintStart_toStartOf="@+id/redSeekBar"
+        app:layout_constraintTop_toTopOf="@+id/blueTextView" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorDefault"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/blueEditText"
+        app:layout_constraintStart_toStartOf="@+id/blueTextView"
+        app:layout_constraintTop_toBottomOf="@+id/blueSeekBar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
