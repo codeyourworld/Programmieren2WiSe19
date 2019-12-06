@@ -57,13 +57,14 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="3"
-        android:inputType="numberDecimal"
+        android:hint="@string/default_value_rgb"
+        android:inputType="number"
+        android:text="0"
         app:layout_constraintBottom_toBottomOf="@+id/redTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.97"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/redTextView"
-        android:hint="@string/default_value_rgb"
         tools:ignore="Autofill" />
 
     <EditText
@@ -71,11 +72,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="3"
-        android:inputType="numberDecimal"
+        android:hint="@string/default_value_rgb"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="@+id/greenTextView"
         app:layout_constraintEnd_toEndOf="@+id/redEditText"
         app:layout_constraintTop_toTopOf="@+id/greenTextView"
-        android:hint="@string/default_value_rgb"
         tools:ignore="Autofill" />
 
     <EditText
@@ -83,8 +84,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="3"
-        android:inputType="numberDecimal"
         android:hint="@string/default_value_rgb"
+        android:inputType="number"
+
         app:layout_constraintBottom_toBottomOf="@+id/blueTextView"
         app:layout_constraintEnd_toEndOf="@+id/greenEditText"
         app:layout_constraintTop_toTopOf="@+id/blueTextView"
