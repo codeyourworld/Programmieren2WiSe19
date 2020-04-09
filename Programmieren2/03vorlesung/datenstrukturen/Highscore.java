@@ -7,6 +7,9 @@ public class Highscore {
 	
 	public static void main(String[] args) {
 		
+		/*
+		 * Dies ist nur ein Test :) 
+		 */
 		ArrayList<Score> highscore = new ArrayList<>();
 		highscore.add(new Score("Dennis", 10));
 		highscore.add(new Score("Anna", 12));
