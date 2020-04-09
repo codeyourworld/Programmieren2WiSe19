@@ -9,6 +9,9 @@ public class Highscore {
 		
 		/*
 		 * Dies ist nur ein Test :) 
+		 * 
+		 * Ein weiterer Test :)
+		 * 
 		 */
 		ArrayList<Score> highscore = new ArrayList<>();
 		highscore.add(new Score("Dennis", 10));
